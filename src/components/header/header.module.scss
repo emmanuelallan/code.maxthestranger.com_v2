@@ -23,6 +23,10 @@
   @media (max-width: 768px) {
     padding: 0 25px;
   }
+
+  @media (min-width: 768px) and (max-width: 898px) {
+    padding: 14px;
+  }
 }
 
 .nav{
@@ -86,6 +90,10 @@
         font-weight: 500;
         color: var(--secondaryColor);
 
+        @media (min-width: 768px) and (max-width: 898px) {
+          padding: 14px;
+        }
+
         &::after{
           content: "";
           position: absolute;
@@ -122,8 +130,8 @@
   a{
     color: var(--secondaryColor);
     background-color: transparent;
-    border: 1px solid var(--secondaryColor);
-    //border-radius: var(--borderRadius);
+    border: 0.5px solid var(--secondaryColor);
+    border-radius: var(--borderRadius);
     padding: 0.75rem 1rem;
     line-height: 1;
     text-decoration: none;

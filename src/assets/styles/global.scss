@@ -17,7 +17,40 @@
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
   --navy: #0a192f;
   --darkSlate: #495670;
+  --background: #151417;
+  --comment: #6272a4;
+  --foreground: #f8f8f2;
+  --selection: #44475a;
+  --cyan: #80ffea;
+  --green: #8aff80;
   --orange: #ffca80;
+  --pink: #ff80bf;
+  --purple: #9580ff;
+  --red: #ff9580;
+  --yellow: #ffff80;
+  --background-30: #282a3633;
+  --comment-30: #6272a433;
+  --foreground-30: #f8f8f233;
+  --selection-30: #44475a33;
+  --cyan-30: #80ffea33;
+  --green-30: #8aff80;
+  --orange-30: #ffca80;
+  --pink-30: #FF80BF3;
+  --purple-30: #9580ff;
+  --red-30: #ff9580;
+  --yellow-30: #ffff80;
+  --background-40: #282a3666;
+  --comment-40: #6272a466;
+  --foreground-40: #f8f8f266;
+  --selection-40: #44475a66;
+  --cyan-40: #80ffea66;
+  --green-40: #8aff80;
+  --orange-40: #ffca80;
+  --pink-40: #FF80BF6;
+  --purple-40: #9580ff;
+  --red-40: #ff9580;
+  --yellow-40: #ffff80;
+
 }
 
 *,
@@ -89,6 +122,45 @@ button {
 :focus:not(:focus-visible) {
   outline: none;
   outline-offset: 0;
+}
+
+section {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1000px;
+
+  @media (max-width: 768px) {
+    padding: 80px 0 !important;
+  }
+
+  @media (max-width: 480px){
+    padding: 60px 0 !important;
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.gradient {
+  background-size: 100%;
+  -moz-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-pink-purple {
+  background-image: linear-gradient(var(--gradientDegree),var(--pink) 0,var(--purple) 100%);
+}
+
+img{
+  display: block;
+  max-width: 100%;
 }
 
 /* Fonts

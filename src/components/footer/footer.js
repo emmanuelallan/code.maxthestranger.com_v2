@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {footer, footer_socials, footer_credit, github_stats} from './footer.module.scss';
+import {footer, footer_socials, footer_credit, github_stats, mail_btn} from './footer.module.scss';
 import {useEffect, useState} from "react";
 import {socials_links} from "../../data/socials";
 
@@ -39,6 +39,11 @@ export default function Footer(){
             </div>
             <div className={footer_credit}>
                 <div>Designed &amp; Built by Max The Stranger</div>
+                <a href="jjj.com" target="_blank" rel="noopener noreferrer" className={mail_btn}>
+                    <span>
+                        Buy me a coffee ☕
+                    </span>
+                </a>
                 <div className={github_stats}>
                     <span>
                         <i className="ri-shield-user-line" />

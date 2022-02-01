@@ -65,3 +65,20 @@
     font-size: 14px;
   }
 }
+
+.mail_btn{
+  background: var(--hoverColor);
+  color: var(--secondaryColor);
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  outline: none;
+  margin-top: 20px;
+  transition: all var(--duration) ease-in-out;
+  border-radius: var(--borderRadius);
+  text-align: center;
+
+  &:hover{
+    color: var(--primaryColor);
+    border-color: var(--secondaryColor) ;
+  }
+}

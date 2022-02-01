@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Layout from "../layout/layout";
+import Hero from "../sections/hero";
 
 // markup
 const IndexPage = () => {
   return (
     <Layout>
-      <p>Main one here</p>
+      <Hero />
     </Layout>
   );
 };
