@@ -1,0 +1,101 @@
+@import 'remixicon/fonts/remixicon.css';
+
+:root{
+  --bodyFont: "Biotif",sans-serif;
+  --headingFont: "Neuzeit Grotesk Bold",sans-serif;
+  --codeFont: "Fira Code",monospace;
+  --primaryColor: #f2f2f2;
+  --secondaryColor: #8f9ba8;
+  --backgroundColor: #08070b;
+  --commandColor: hsla(0,0%,100%,0.05);
+  --hoverColor: #212024;
+  --gradientDegree: 135deg;
+  --navHeightDesktop: 60px;
+  --navHeightMobile: 110px;
+  --borderRadius: 8px;
+  --duration: 0.2s;
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  background: var(--backgroundColor);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+
+/* Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Neuzeit Grotesk Bold';
+  src: url('../font/NeuzeitGrotesk-Bold.woff2') format('woff2'),
+  url('../font/NeuzeitGrotesk-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('../font/FiraCode-Regular.woff2') format('woff2'),
+  url('../font/FiraCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biotif';
+  src: url('../font/Biotif-Bold.woff2') format('woff2'),
+  url('../font/Biotif-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biotif';
+  src: url('../font/Biotif-SemiBold.woff2') format('woff2'),
+  url('../font/Biotif-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biotif';
+  src: url('../font/Biotif-Book.woff2') format('woff2'),
+  url('../font/Biotif-Book.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biotif';
+  src: url('../font/Biotif-Regular.woff2') format('woff2'),
+  url('../font/Biotif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biotif';
+  src: url('../font/Biotif-RegularItalic.woff2') format('woff2'),
+  url('../font/Biotif-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
