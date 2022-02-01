@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { root, layout, main } from './layout.module.scss';
+import { root, layout, content, main } from './layout.module.scss';
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
 import Socials from "../components/socials/socials";
@@ -19,10 +19,11 @@ export default function Layout({ children }) {
             <Web />
 
             {/* main */}
-            <main className={main}>{children}</main>
-
-            {/* footer */}
-            <Footer />
+            <div className={content}>
+                <main className={main}>{children}</main>
+                {/* footer */}
+                <Footer />
+            </div>
         </div>
       </div>
   )
