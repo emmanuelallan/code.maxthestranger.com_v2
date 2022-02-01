@@ -12,7 +12,7 @@ export const nav_links = [
         name: 'uses'
     },
     {
-        name: 'courses'
+        name: 'podcasts'
     },
     {
         name: 'reminder'

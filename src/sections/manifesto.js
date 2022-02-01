@@ -5,7 +5,7 @@ import * as styles from './manifesto.module.scss';
 export default function Manifesto(){
     return(
         <section className="container">
-            <div className={styles.post_content}>
+            <div className="post_content">
                     <h1 className="gradient gradient-cyan-green">Tick-tock. Tick-tock.</h1>
                     <div className={styles.single}>
                         <p className={styles.manifesto}><strong>Time is the most important asset.</strong> Time does not equal
