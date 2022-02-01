@@ -86,6 +86,11 @@ button {
   border-radius: 0;
 }
 
+:focus:not(:focus-visible) {
+  outline: none;
+  outline-offset: 0;
+}
+
 /* Fonts
    ========================================================================== */
 

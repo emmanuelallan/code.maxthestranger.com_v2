@@ -1,11 +1,13 @@
 import * as React from 'react';
 import {Link} from 'gatsby';
-import {header, nav, logo, nav_link, resume, menu, sidebar, menu_sidebar,menu_hamburger, hambox, hambox_inner, resume_link}  from './header.module.scss';
+import {header, nav, logo, nav_link, resume, menu, sidebar, menu_sidebar_open, menu_sidebar_closed,menu_hamburger_open, hambox, hambox_inner_open, hambox_inner_closed, resume_link}  from './header.module.scss';
 
 import logoFile from '../../images/logo.svg';
 import resumeFile from '../../images/resume.pdf';
 import {nav_links} from "../../data/nav";
-export default function Header(){
+
+
+export default function Header({open, handleClick}){
     return(
         <header className={`${header}`}>
             <nav className={nav}>
@@ -36,13 +38,13 @@ export default function Header(){
 
                 <div className={menu}>
                     <div>
-                        <button aria-label="menu" className={menu_hamburger}>
+                        <button onClick={handleClick} aria-label="menu" className={menu_hamburger_open}>
                             <div className={hambox}>
-                                <div className={hambox_inner} />
+                                <div className={open ? hambox_inner_open : hambox_inner_closed} />
                             </div>
                         </button>
 
-                        <aside aria-hidden="true" className={menu_sidebar}>
+                        <aside aria-hidden="true" className={open ? menu_sidebar_open : menu_sidebar_closed}>
                             <nav className={sidebar}>
                                 <ul>
                                     {
@@ -54,7 +56,6 @@ export default function Header(){
                                             </li>
                                         ))
                                     }
-
                                 </ul>
 
                                 <a href={resumeFile} target="_blank" rel="noopener noreferrer" className={resume_link}>
