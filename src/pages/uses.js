@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Layout from "../layout/layout";
 
-import {categories} from "../data/uses";
+// import {categories} from "../data/uses";
 
 export default function Uses(){
     return(
