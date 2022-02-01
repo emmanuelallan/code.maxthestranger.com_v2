@@ -345,3 +345,11 @@
   margin: 10% auto 0;
   width: max-content;
 }
+
+.active{
+  color: var(--primaryColor)!important;
+
+  &::after{
+    opacity: 1!important;
+  }
+}

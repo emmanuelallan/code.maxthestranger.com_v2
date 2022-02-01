@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Link} from 'gatsby';
-import {header, nav, logo, nav_link, resume, menu, sidebar, menu_sidebar_open, menu_sidebar_closed,menu_hamburger_open, hambox, hambox_inner_open, hambox_inner_closed, resume_link}  from './header.module.scss';
+import {header, active, nav, logo, nav_link, resume, menu, sidebar, menu_sidebar_open, menu_sidebar_closed,menu_hamburger_open, hambox, hambox_inner_open, hambox_inner_closed, resume_link}  from './header.module.scss';
 
 import logoFile from '../../images/logo.svg';
 import resumeFile from '../../images/resume.pdf';
@@ -21,7 +21,7 @@ export default function Header({open, handleClick}){
                         {
                             nav_links.map((links, index) => (
                                 <li key={index}>
-                                    <Link to={`/${links.name}`}>
+                                    <Link to={`/${links.name}`} activeClassName={active}>
                                         {links.name}
                                     </Link>
                                 </li>
