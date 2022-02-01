@@ -1,0 +1,32 @@
+.post_content{
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--secondaryColor);
+  background: var(--backgroundColor);
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 20px 0;
+
+  h1{
+    font-family: var(--headingFont);
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0 0 20px;
+    color: var(--primaryColor);
+  }
+}
+
+.single{
+  display: block;
+}
+
+.manifesto{
+  text-align: justify;
+  margin: 20px 0;
+  color: var(--secondaryColor);
+  strong{
+    color: var(--primaryColor);
+    font-weight: 500;
+  }
+}

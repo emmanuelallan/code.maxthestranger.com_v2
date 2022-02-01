@@ -11,7 +11,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1600px;
-  min-height: 100vh;
+  min-height: calc(100vh - 241px);
 
   @media (max-width: 1080px) {
     padding: 0 100px;

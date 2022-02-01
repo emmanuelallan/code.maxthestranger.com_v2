@@ -2,6 +2,7 @@ import * as React from 'react';
 import {footer, footer_socials, footer_credit, github_stats, mail_btn} from './footer.module.scss';
 import {useEffect, useState} from "react";
 import {socials_links} from "../../data/socials";
+import kofi from '../../images/kofi.png';
 
 export default function Footer(){
     const [user, setUser] = useState({})
@@ -39,9 +40,10 @@ export default function Footer(){
             </div>
             <div className={footer_credit}>
                 <div>Designed &amp; Built by Max The Stranger</div>
-                <a href="jjj.com" target="_blank" rel="noopener noreferrer" className={mail_btn}>
+                <a href="jjj.com" target="_blank" rel="noopener noreferrer" className={`${mail_btn} gradient gradient-purple-cyan`}>
                     <span>
-                        Buy me a coffee ☕
+                        <img src={kofi} alt="coffee" />
+                        <div>Buy me a Kofi</div>
                     </span>
                 </a>
                 <div className={github_stats}>
