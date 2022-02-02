@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Link} from 'gatsby';
-import {hero, flex_content, mailInfo, latest_article, mailList, list_item_link, mail_btn, list_item_title, list_item_date, list_item_link_hovered} from './hero.module.scss';
+import {hero, flex_content, text_center, mailInfo, latest_article, mailList, list_item_link, mail_btn, list_item_title, list_item_date, list_item_link_hovered} from './hero.module.scss';
 
 import mts from '../images/mts.svg';
 import {articles} from "../data/articles";
@@ -65,8 +65,9 @@ const Hero = () => {
 
             <div className={latest_article}>
                 <h2 style={{justifyContent: 'center'}}>
-                    Get In Touch
+                    Newsletter
                 </h2>
+                <p className={text_center}>Subscribe to the newsletter to get my latest content by email. Not on any set schedule. Unsubscribe anytime.</p>
 
                 <div className={mailInfo}>
                     <input type="email" className={mailList} placeholder="Enter you mail address" required />

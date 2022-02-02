@@ -139,11 +139,11 @@ section {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 10px;
-  font-weight: 600;
-  line-height: 1.1;
-}
+//h1, h2, h3, h4, h5, h6 {
+//  margin: 0 0 10px;
+//  font-weight: 600;
+//  line-height: 1.1;
+//}
 
 .gradient {
   background-size: 100%;
@@ -236,7 +236,7 @@ img{
     color: var(--primaryColor);
     text-decoration: none;
     transition: opacity var(--duration) ease-in-out;
-    line-height: 18px;
+    //line-height: 18px;
 
     &:hover{
       color: var(--secondaryColor);
@@ -247,6 +247,10 @@ img{
 .pl-40{
   padding-left: 40px;
 
+}
+
+.text_center{
+  text-align: center;
 }
 
 /* Fonts

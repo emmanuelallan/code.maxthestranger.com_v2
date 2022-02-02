@@ -40,7 +40,7 @@ export default function Footer(){
             </div>
             <div className={footer_credit}>
                 <div>Designed &amp; Built by Max The Stranger</div>
-                <a href="jjj.com" target="_blank" rel="noopener noreferrer" className={`${mail_btn} gradient gradient-purple-cyan`}>
+                <a href="https://ko-fi.com/maxthestranger" target="_blank" rel="noopener noreferrer" className={`${mail_btn} gradient gradient-purple-cyan`}>
                     <span>
                         <img src={kofi} alt="coffee" />
                         <div>Buy me a Kofi</div>
