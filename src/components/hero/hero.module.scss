@@ -1,0 +1,33 @@
+.hero{
+  gap: 1.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  div:first-child{
+    @media screen and (max-width: 768px) {
+      order: 2;
+    }
+  }
+
+  img{
+    border: 1px solid var(--backgroundColor);
+    border-radius: 8px;
+    height: auto;
+    margin-left: 2rem;
+    width: 250px;
+
+    @media screen and (max-width: 768px){
+      order: 1;
+      margin: 0 0 1rem;
+      width: 150px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import Layout from "../layout/layout";
+import Layout from "../layouts/layout";
 
 export default function Projects(){
     return(
         <Layout>
-            <section className="container">
+            <section className="wrapper">
                 <div className="post_content">
                     <h1 className="gradient gradient-yellow-pink">
                         Work. Hobby. Open Source.

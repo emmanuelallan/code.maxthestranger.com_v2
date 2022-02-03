@@ -39,7 +39,7 @@ export const categories = [
             },
             {
                 title: 'Keychron K6',
-                description: 'My preferred wireless keyboard with a 65% compact layout.',
+                description: 'My preferred wireless keyboard with a 65% compact layouts.',
                 url: 'https://amzn.to/3bvnYOW'
             },
             {
