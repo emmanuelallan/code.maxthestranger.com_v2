@@ -1,15 +1,25 @@
 import * as React from 'react';
-import {Link} from "gatsby";
+import {graphql, Link} from "gatsby";
 import Layout from "../layouts/layout";
-
-import {posts} from "../data/articles";
 
 import Hero from "../components/hero/hero";
 import ListItem from "../components/listItem/listItem";
 import Newsletter from "../components/newsletter/newsletter";
 
 // markup
-const IndexPage = () => {
+const IndexPage = (props) => {
+    const {data} = props
+    const posts = data.allMarkdownRemark.edges
+
+    const renderAll = () => {
+        return posts.map(({node}) => {
+            const title = node.frontmatter.title || node.fields.slug
+
+            return(
+                <ListItem key={node.fields.slug} href={`/posts${node.fields.slug}`} title={title} date={node.frontmatter.date} />
+            )
+        })
+    }
   return (
     <Layout>
         <section className="wrapper">
@@ -24,11 +34,7 @@ const IndexPage = () => {
                 </div>
 
                 <ul className="item_list">
-                    {
-                        posts.map((post, index) => (
-                            <ListItem key={index} href={post.href} title={post.title} date={post.date} index={index} />
-                        ))
-                    }
+                    {renderAll()}
                 </ul>
 
                 <div className="pt_4 pb_4">
@@ -41,3 +47,28 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`

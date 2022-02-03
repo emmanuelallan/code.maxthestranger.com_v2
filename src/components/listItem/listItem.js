@@ -12,7 +12,7 @@ import {
 export default function ListItem({index, date, href, title}){
     return (
             <li className={item}>
-                <Link to={`/${href}`}>
+                <Link to={href}>
                     <span className={item_link}>
                         <span className={item_hovered} />
                         <span className={item_title}>{title}</span>

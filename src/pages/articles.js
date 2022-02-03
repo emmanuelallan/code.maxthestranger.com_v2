@@ -1,7 +1,22 @@
-import * as React from 'react';
+import React  from 'react';
+import {graphql} from "gatsby";
 import Layout from "../layouts/layout";
+import ListItem from "../components/listItem/listItem";
 
-export default function Articles(){
+export default function Articles(props){
+    const {data} = props
+    const posts = data.allMarkdownRemark.edges
+
+    const renderAll = () => {
+        return posts.map(({node}) => {
+            const title = node.frontmatter.title || node.fields.slug
+
+            return(
+                <ListItem key={node.fields.slug} href={`/posts${node.fields.slug}`} title={title} date={node.frontmatter.date} />
+            )
+        })
+    }
+
     return(
         <Layout>
             <section className="wrapper">
@@ -12,10 +27,40 @@ export default function Articles(){
                     <div>
                         <p>Here you can find all the <strong>188 articles</strong> I wrote. You can read about web development, software engineering, and tech career in both English and Portuguese.</p>
                         <h2>Featured Articles</h2>
-                        <p>Coming soon...</p>
+                        {/* render featured */}
+                        <h2>All articles</h2>
+                        {/* render all articles */}
+                        <ul className="item_list">
+                            {renderAll()}
+                        </ul>
                     </div>
                 </div>
             </section>
         </Layout>
     )
 }
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
