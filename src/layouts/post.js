@@ -1,27 +1,29 @@
-import * as React from 'react'
-import {graphql} from "gatsby";
-import Layout from "./layout";
+import * as React from "react"
+import { graphql } from "gatsby"
+import Layout from "./layout"
 
 export default function Post(props) {
-    const post = props.data.markdownRemark
+  const post = props.data.markdownRemark
 
-    return (
-        <Layout>
-            <section className="wrapper">
-                <div className="post_content post-article">
-                    <div>
-                        <h1 className="post-title">{post.frontmatter.title}</h1>
-                        <h2 className="post-subtitle">
-                            <time dateTime={post.frontmatter.date}>{post.frontmatter.date}</time>
-                            <span> • 4 minute read </span>
-                        </h2>
-                    </div>
+  return (
+    <Layout>
+      <section className="wrapper">
+        <div className="post_content post-article">
+          <div>
+            <h1 className="post-title">{post.frontmatter.title}</h1>
+            <h2 className="post-subtitle">
+              <time dateTime={post.frontmatter.date}>
+                {post.frontmatter.date}
+              </time>
+              <span> • {post.fields.readingTime.text} </span>
+            </h2>
+          </div>
 
-                    <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                </div>
-            </section>
-        </Layout>
-    )
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+      </section>
+    </Layout>
+  )
 }
 
 export const pageQuery = graphql`
@@ -39,6 +41,11 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        readingTime {
+          text
+        }
       }
     }
   }
