@@ -17,9 +17,11 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "dotenv": "^16.0.0",
     "framer-motion": "^6.2.3",
     "gatsby": "^4.5.3",
     "gatsby-plugin-image": "^2.6.0",
+    "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^4.5.2",
     "gatsby-plugin-mdx": "^3.5.2",
     "gatsby-plugin-react-helmet": "^5.5.0",

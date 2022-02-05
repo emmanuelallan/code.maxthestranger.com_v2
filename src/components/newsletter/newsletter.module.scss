@@ -1,4 +1,4 @@
-.mail_wrapper{
+.mail_wrapper {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -13,9 +13,12 @@
   @media (max-width: 480px) {
     width: 100%;
   }
+  p {
+    text-align: center;
+  }
 }
 
-.mail_input{
+.mail_input {
   padding: 12px 16px;
   font-size: 16px;
   width: 100%;
@@ -27,13 +30,13 @@
   border-radius: var(--borderRadius);
   font-family: var(--codeFont);
 
-  &::placeholder{
+  &::placeholder {
     font-size: 15px;
     font-family: var(--codeFont);
   }
 }
 
-.mail_btn{
+.mail_btn {
   background: var(--hoverColor);
   color: var(--secondaryColor);
   padding: 12px 18px;
@@ -49,9 +52,16 @@
     width: 80%;
   }
 
-  &:hover{
+  &:hover {
     color: var(--primaryColor);
-    border-color: var(--secondaryColor) ;
+    border-color: var(--secondaryColor);
   }
 }
 
+.error {
+  color: rgb(212, 91, 91) !important;
+}
+
+.success {
+  color: rgb(46, 202, 124) !important;
+}
