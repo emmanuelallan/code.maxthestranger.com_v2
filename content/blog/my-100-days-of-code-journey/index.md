@@ -1,5 +1,5 @@
 ---
-title: My \#100DaysOfCode Journey
+title: "My #100DaysOfCode Journey"
 date: "2022-02-06T17:42:32.169Z"
 description: The reason why, the process and what I learned
 ---
