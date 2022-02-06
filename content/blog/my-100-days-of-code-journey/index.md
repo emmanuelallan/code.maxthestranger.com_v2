@@ -6,7 +6,7 @@ description: The reason why, the process and what I learned
 
 ## Introduction
 
-I first came across the concept of #100daysofcode via Twitter [@pokecoder](https://twitter.com/pokecoder). This was sometime late last year, around October when Ale the owner of the Twitter account wanted to learn front-end development. She was already a java developer at an automotive software company in Texas.
+I first came across the concept of [#100daysofcode](https://www.100daysofcode.com/) via Twitter ([@pokecoder](https://twitter.com/pokecoder)). This was sometime late last year, around October when Ale the owner of the Twitter account wanted to learn front-end development. She was already a java developer at an automotive software company in Texas.
 
 With this revelation, I decided to dig deeper into the topic and found out that, It was a phenomenon that already plagued the web, especially Twitter, with its origin stemming from a developer named [Alexander Kallaway](https://twitter.com/ka11away).
 
@@ -16,7 +16,7 @@ I was already somewhat a developer when I started this challenge, not employed, 
 
 ## The Why?
 
-Being a freelance developer especially in python, you normally don’t get to work on full projects, it’s either a student wants his/her assignment done or someone wants some terminal applications that display random characters for a short film or someone's web app is down and they need a quick fix...
+Being a freelance developer especially in python, you normally don’t get to work on full projects, it’s either a student wants his/her assignment done or someone wants some terminal applications that displays random characters for a short film or someone's web app is down and they need a quick fix...
 
 Not much experience when it comes to architecting and developing a useful application that can solve a real-life problem.
 With this as a foundation to fuel the intention, I challenged myself to learn and apply a complete tech stack in 100 days. So I chose MERN stack, ‘cause why not, I mean one language front to back, sounds like a good ting' to me.
@@ -32,7 +32,7 @@ Github Contributions During Freelance Days
 
 The rules of the challenge were simple in theory,
 
-- Code for at least an hour every day, excluding tuts or courses, etc
+- Code for at least an hour every day, excluding tuts or course time.
 - Push to Github and update the 100days challenge log every day
 - Tweet about it and use the #100daysofcode
 - Retweet, share, and comment on other people’s progress
@@ -58,7 +58,7 @@ In order to prove to myself that I could write javascript without even watching 
 ![Tweet Day 0](./js_projos.png)
 [_Project Previews_](https://maxthestranger.github.io/30-projos-js-curve/)
 
-_budget tracking app, form validation, beat maker, calculator, bus seat booking system, ecomerce web app_
+_~budget tracking app, form validation, beat maker, calculator, bus seat booking system, ecomerce web app_
 
 The more projects I developed, the more I got comfortable writing and structuring the code.
 
