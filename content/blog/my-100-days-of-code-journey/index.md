@@ -1,5 +1,5 @@
 ---
-title: My \#100DaysOfCode Journey
+title: My #100DaysOfCode Journey
 date: "2022-02-06T17:42:32.169Z"
 description: The reason why, the process and what I learned
 ---
@@ -119,3 +119,10 @@ I don’t want the feeling to stop, with James Clear’s book The Atomic habit, 
 - Share and like other people’s progress — it's in the community's spirit
 - Do not stop even after finishing the challenge
 - Do not give up when you skip a day or 2 but be flexible enough to bounce back
+
+<p align = "center">
+<img src = "./git_after.png">
+</p>
+<p align = "center">
+Github Contributions Now
+</p>
