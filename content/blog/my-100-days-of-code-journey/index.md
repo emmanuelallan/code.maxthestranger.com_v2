@@ -4,7 +4,7 @@ date: "2022-02-06T17:42:32.169Z"
 description: The reason why, the process and what I learned
 ---
 
-### Introduction
+## Introduction
 
 I first came across the concept of #100daysofcode via Twitter [@pokecoder](https://twitter.com/pokecoder). This was sometime late last year, around October when Ale the owner of the Twitter account wanted to learn front-end development. She was already a java developer at an automotive software company in Texas.
 
@@ -14,7 +14,7 @@ I was already somewhat a developer when I started this challenge, not employed, 
 
 ![Upwork Profile](./upwork_profile.png)
 
-### The Why?
+## The Why?
 
 Being a freelance developer especially in python, you normally don’t get to work on full projects, it’s either a student wants his/her assignment done or someone wants some terminal applications that display random characters for a short film or someone's web app is down and they need a quick fix...
 
@@ -28,7 +28,7 @@ With this as a foundation to fuel the intention, I challenged myself to learn an
 Github Contributions During Freelance Days
 </p>
 
-### The process
+## The process
 
 The rules of the challenge were simple in theory,
 
@@ -105,7 +105,7 @@ I continued developing more applications and experimenting with lots of other re
 
 ![Bookstore Projects](./github.png)
 
-### Conclusion
+## Conclusion
 
 One thing I have enjoyed, Is the process. I get happy every time I start and finish something.
 
