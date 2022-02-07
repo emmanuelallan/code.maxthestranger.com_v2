@@ -3,7 +3,7 @@ export const tech = [
     title: "javascript(ES6)",
   },
   {
-    title: "React/Next.js",
+    title: "React/Next.js/Gatsby.js",
   },
   {
     title: "Node.js/Express",
