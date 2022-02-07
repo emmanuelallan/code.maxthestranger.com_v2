@@ -18,7 +18,7 @@ I was already somewhat a developer when I started this challenge, not employed, 
 
 Being a freelance developer especially in python, you normally don’t get to work on full projects, it’s either a student wants his/her assignment done or someone wants some terminal applications that displays random characters for a short film or someone's web app is down and they need a quick fix...
 
-Not much experience when it comes to architecting and developing a useful application that can solve a real-life problem.
+Not much experience when it comes to architecting and/or developing a useful application that can solve a real-life problem.
 With this as a foundation to fuel the intention, I challenged myself to learn and apply a complete tech stack in 100 days. So I chose MERN stack, ‘cause why not, I mean one language front to back, sounds like a good ting' to me.
 
 <p align = "center">
