@@ -1,34 +1,33 @@
-.about_wrapper{
+.about_wrapper {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
 
-  & > div:first-child{
-    @media (max-width: 768px){
+  & > div:first-child {
+    @media (max-width: 768px) {
       order: 2;
-
     }
   }
 }
 
-.pic_wrapper{
+.pic_wrapper {
   position: relative;
   max-width: 300px;
 
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     margin: 50px auto 0;
     width: 70%;
     order: -1;
   }
 }
 
-.pic{
-  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+.pic {
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   transition: var(--transition);
   display: block;
   position: relative;
@@ -36,14 +35,15 @@
   border-radius: var(--borderRadius);
   background-color: var(--primaryColor);
 
-  &::before{
+  &::before {
     top: 0;
     left: 0;
     background-color: var(--navy);
     mix-blend-mode: screen;
   }
 
-  &::after, &::before{
+  &::after,
+  &::before {
     content: "";
     display: block;
     position: absolute;
@@ -53,31 +53,32 @@
     transition: var(--transition);
   }
 
-  &::after{
+  &::after {
     border: 2px solid var(--primaryColor);
     top: 20px;
     left: 20px;
     z-index: -1;
   }
 
-  img{
+  img {
     border-radius: var(--borderRadius);
     mix-blend-mode: multiply;
     filter: grayscale(100%) contrast(1);
     transition: var(--transition);
   }
 
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     background: transparent;
     outline: 0;
-    box-shadow: 0 20px 30px -15px rgba(2,12,27,0.7);
+    box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
 
-    img{
+    img {
       filter: none;
       mix-blend-mode: normal;
     }
 
-    &::after{
+    &::after {
       top: 15px;
       left: 15px;
     }

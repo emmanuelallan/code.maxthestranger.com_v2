@@ -1,54 +1,68 @@
+<div align="center">
+  <img alt="Logo" src="src/images/mts.png" width="100" />
+</div>
+<h1 align="center">
+  code.maxthestranger.com - v2
+</h1>
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  The 2nd iteration of <a href="https://code.maxthestranger.com" target="_blank">code.maxthestranger.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted on <a href="https://www.vercel.com/" target="_blank">Vercel</a>
+</p>
+<p align="center">
+  Previous iterations:
+  <a href="https://github.com/maxthestranger/code.maxthestranger.com" target="_blank">v1</a>
+</p>
+<p align="center">
+  <a href="https://code.maxthestranger.com/" target="_blank">
+    <img src="https://img.shields.io/github/deployments/maxthestranger/code.maxthestranger.com/production?label=Vercel&logo=vercel" alt="Vercel Status" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
 
-## 🚀 Quick start
+![demo](src/images/website.png)
 
-1.  **Create a Gatsby site.**
+## 🚨 Forking this repo (please read!)
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Good artists steal, great artists copy. You can just clone and use this as a template for your site, just be sure to contribute if you have any ideas, and don't forget to say ~ Original Design by _Max The Stranger_ &nbsp; **yes, with attribution**.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+### TL;DR
 
-2.  **Start developing.**
+Yes, you can fork this repo. Please give me proper credit by linking back to [code.maxthestranger.com](https://code.maxthestranger.com). Thanks!
 
-    Navigate into your new site’s directory and start it up.
+## 🛠 Installation & Set Up
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-3.  **Open the code and start customizing!**
+   ```sh
+   nvm install
+   ```
 
-    Your site is now running at http://localhost:8000!
+2. Install the Gatsby CLI
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+   ```sh
+   npm install -g gatsby-cli
+   ```
 
-4.  **Learn more**
+3. Clone the project
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+   ```sh
+   git clone git@github.com:maxthestranger/code.maxthestranger.com_v2.git
+   ```
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+4. Install dependencies
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+   ```sh
+   npm install
+   ```
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+5. Start the development server
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+   ```sh
+   gatsby develop
+   ```
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🚀 Building and Running for Production
 
-## 🚀 Quick start (Gatsby Cloud)
+1. Deploy using vercel
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/maxthestranger/code.maxthestranger.com_v2.git%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+:call_me_hand: See you in life
