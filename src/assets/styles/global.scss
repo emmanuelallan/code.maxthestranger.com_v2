@@ -230,10 +230,11 @@ img {
   .post-title {
     text-align: center;
     color: var(--primaryColor);
-    margin: 90px auto 0;
+    margin: 30px auto 0;
     max-width: none;
     font-size: 48px;
     line-height: 60px;
+    overflow-wrap: break-word;
 
     @media (min-width: 768px) {
       margin-top: 0;
