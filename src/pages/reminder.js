@@ -11,7 +11,14 @@ export default function Reminder() {
             Tick-tock. Tick-tock.
           </h1>
           <div>
-            <p>Coming soon...</p>
+            <figure>
+              <blockquote cite="https://code.maxthestranger.com">
+                <p>Who seeks shall find</p>
+              </blockquote>
+              <figcaption>
+                — Sophocles, <cite>Electra</cite>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
