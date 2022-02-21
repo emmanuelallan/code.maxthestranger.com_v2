@@ -17,7 +17,6 @@ module.exports = {
         ],
         // This object gets passed directly to the gtag config command
         gtagConfig: {
-          optimize_id: "",
           anonymize_ip: true,
           cookie_expires: 0,
         },
@@ -29,8 +28,6 @@ module.exports = {
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
           exclude: [],
-          // Defaults to https://www.googletagmanager.com
-          origin: "YOUR_SELF_HOSTED_ORIGIN",
         },
       },
     },
