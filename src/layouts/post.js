@@ -6,7 +6,7 @@ export default function Post(props) {
   const post = props.data.markdownRemark
 
   return (
-    <Layout>
+    <Layout pageTitle={post.frontmatter.title}>
       <section className="wrapper">
         <div className="post_content post-article">
           <div>

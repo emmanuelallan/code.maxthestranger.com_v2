@@ -3,7 +3,7 @@ import Layout from "../layouts/layout"
 
 export default function Uses() {
   return (
-    <Layout>
+    <Layout pageTitle="Uses">
       <section className="wrapper">
         <div className="post_content">
           <h1 className="gradient gradient-yellow-pink">Tools. Apps. Gear.</h1>

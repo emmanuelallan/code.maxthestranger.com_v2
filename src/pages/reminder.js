@@ -4,7 +4,7 @@ import Layout from "../layouts/layout"
 
 export default function Reminder() {
   return (
-    <Layout>
+    <Layout pageTitle="Reminder">
       <section className="wrapper">
         <div className="post_content">
           <h1 className="gradient gradient-blue-green">
