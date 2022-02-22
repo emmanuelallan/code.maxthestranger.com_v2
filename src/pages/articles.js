@@ -23,7 +23,7 @@ export default function Articles(props) {
   }
 
   return (
-    <Layout>
+    <Layout pageTitle="Blog">
       <section className="wrapper">
         <div className="post_content">
           <h1 className="gradient gradient-cyan-green">

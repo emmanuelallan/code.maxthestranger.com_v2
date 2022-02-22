@@ -26,7 +26,7 @@ const IndexPage = (props) => {
     })
   }
   return (
-    <Layout>
+    <Layout pageTitle="Portfolio">
       <section className="wrapper">
         <div className="post_content">
           <Hero />

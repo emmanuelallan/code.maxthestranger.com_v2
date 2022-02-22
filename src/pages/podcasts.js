@@ -3,7 +3,7 @@ import Layout from "../layouts/layout"
 
 export default function Podcasts() {
   return (
-    <Layout>
+    <Layout pageTitle="Podcasts">
       <section className="wrapper">
         <div className="post_content">
           <h1 className="gradient gradient-pink-purple">

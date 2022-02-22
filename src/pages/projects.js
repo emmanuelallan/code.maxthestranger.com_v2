@@ -7,7 +7,7 @@ import Layout from "../layouts/layout"
 
 export default function Projects() {
   return (
-    <Layout>
+    <Layout pageTitle="Projects">
       <section className="wrapper">
         <div className="post_content">
           <h1 className="gradient gradient-blue-green">

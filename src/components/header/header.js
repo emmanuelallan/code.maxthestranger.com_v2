@@ -28,7 +28,7 @@ export default function Header({ open, handleClick }) {
       <nav className={nav}>
         <div className={logo}>
           <Link to="/">
-            <img src={logoFile} alt="logo" />
+            <img src={logoFile} alt="Max The Stranger Logo" />
           </Link>
         </div>
         <div className={nav_link}>

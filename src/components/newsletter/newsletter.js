@@ -41,6 +41,7 @@ export default function Newsletter() {
           name="email"
           value={mail.email}
           onChange={handleChange}
+          aria-label="Email address"
         />
         {mail.result.result === "success" ? (
           <p className={success}>Thank you for subscribing!</p>
